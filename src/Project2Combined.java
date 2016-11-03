@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
-public class Project2Combined {
+public class GroupProjectCode {
 	public static void main(String[] args) { 
 		GameHub();
 	}
@@ -2878,7 +2878,7 @@ public class Project2Combined {
 		return blank;
 	}
 	//HANGMAN CODE END.
-	//TIC-TAC-TOE CODE START (Ex 8.9) GO TO LINE 3351 TO SKIP.
+	//TIC-TAC-TOE CODE START (Ex 8.9) GO TO LINE 3409 TO SKIP.
 	public static void TicTacToeGame(){
 		//Begin Program
 		Scanner input = new Scanner(System.in); 
@@ -2937,6 +2937,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[0][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -2944,6 +2945,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -2951,6 +2953,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[0][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -2958,6 +2961,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -2975,6 +2979,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[0][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -2982,6 +2987,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][1]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -2989,6 +2995,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[0][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -2996,6 +3003,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][1]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3013,6 +3021,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[0][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3020,6 +3029,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][2]).contains("| X |")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3027,6 +3037,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][0]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3034,6 +3045,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[0][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3041,6 +3053,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][2]).contains("| O |")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3048,6 +3061,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][0]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3067,6 +3081,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[1][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3074,6 +3089,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][0]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][0]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3081,6 +3097,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[1][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3088,6 +3105,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][0]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][0]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3106,6 +3124,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[1][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3113,6 +3132,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][1]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3120,6 +3140,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][0]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3127,6 +3148,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][2]).contains("| X |")){
 							if(Arrays.asList(GameGrid[2][0]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3134,6 +3156,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[1][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3141,6 +3164,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][1]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3148,6 +3172,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][0]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3155,6 +3180,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][2]).contains("| O |")){
 							if(Arrays.asList(GameGrid[2][0]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3173,6 +3199,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[1][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3180,6 +3207,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][2]).contains("| X |")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3187,6 +3215,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[1][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3194,6 +3223,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][2]).contains("| O |")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3214,6 +3244,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[2][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3221,6 +3252,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][0]).contains("| X ")){
 							if(Arrays.asList(GameGrid[1][0]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3228,6 +3260,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][2]).contains("| X |")){
 							if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3235,6 +3268,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[2][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3242,6 +3276,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][0]).contains("| O ")){
 							if(Arrays.asList(GameGrid[1][0]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3249,6 +3284,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][2]).contains("| O |")){
 							if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3266,6 +3302,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[2][0]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3273,6 +3310,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3280,6 +3318,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[2][0]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3287,6 +3326,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3305,6 +3345,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[2][1]).contains("| X ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3312,6 +3353,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][2]).contains("| X |")){
 							if(Arrays.asList(GameGrid[1][2]).contains("| X |")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3319,6 +3361,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][0]).contains("| X ")){
 							if(Arrays.asList(GameGrid[1][1]).contains("| X ")){
 								System.out.println("PLAYER X WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3326,6 +3369,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[2][1]).contains("| O ")){
 							if(Arrays.asList(GameGrid[2][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3333,6 +3377,7 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][2]).contains("| O |")){
 							if(Arrays.asList(GameGrid[1][2]).contains("| O |")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
@@ -3340,12 +3385,25 @@ public class Project2Combined {
 						if(Arrays.asList(GameGrid[0][0]).contains("| O ")){
 							if(Arrays.asList(GameGrid[1][1]).contains("| O ")){
 								System.out.println("PLAYER O WON!");
+								TicTacReplay();
 							}
 						}
 					}
 				}
 
 			}
+		}
+	}
+	private static void TicTacReplay() {
+		Scanner input = new Scanner(System.in); 
+		System.out.println("Play Again?\n (1) Yes. (2) No.");
+		int reboot = input.nextInt();
+		if (reboot == 1){
+			TicTacToeGame();
+		}
+		else{
+			System.out.println("Returning to GameHub");
+			GameHub();
 		}
 	}
 	//TIC-TAC-TOE CODE END.
