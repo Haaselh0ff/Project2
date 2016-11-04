@@ -2878,7 +2878,7 @@ public class GroupProjectCode {
 		return blank;
 	}
 	//HANGMAN CODE END.
-	//TIC-TAC-TOE CODE START (Ex 8.9) GO TO LINE 3409 TO SKIP.
+	//TIC-TAC-TOE CODE START (Ex 8.9) GO TO LINE 3437 TO SKIP.
 	public static void TicTacToeGame(){
 		//Begin Program
 		Scanner input = new Scanner(System.in); 
@@ -2901,6 +2901,8 @@ public class GroupProjectCode {
 		boolean TicTacLoop = true;
 		while (TicTacLoop = true){
 			while (PlayerPicker == 0){
+				//Check for a tie at the start each time
+				TicTacTie(GameGrid);
 				char UserID = 'X';
 				System.out.println("Enter a row (0, 1, 2) for Player X: ");
 				int PlayerRow = input.nextInt();
@@ -2908,10 +2910,11 @@ public class GroupProjectCode {
 				System.out.println("Enter a column (0, 1, 2) for Player X: ");
 				int PlayerColumn = input.nextInt();
 				TicTacToeGridMaker(GameGrid, Border, Border2, UserID, PlayerRow, PlayerColumn);
-
 				PlayerPicker = 1;
 			}
-			while (PlayerPicker ==1){
+			while (PlayerPicker == 1){
+				//Check for a tie at the start each time
+				TicTacTie(GameGrid);
 				char UserID = 'O';
 				System.out.println("Enter a row (0, 1, 2) for Player O: ");
 				int PlayerRow = input.nextInt();
@@ -3394,6 +3397,7 @@ public class GroupProjectCode {
 			}
 		}
 	}
+
 	private static void TicTacReplay() {
 		Scanner input = new Scanner(System.in); 
 		System.out.println("Play Again?\n (1) Yes. (2) No.");
@@ -3404,6 +3408,30 @@ public class GroupProjectCode {
 		else{
 			System.out.println("Returning to GameHub");
 			GameHub();
+		}
+	}
+	private static void TicTacTie(String[][] GameGrid) {
+		//Begin if statements
+		if ((Arrays.asList(GameGrid[0][0]).contains("| X ")) || (Arrays.asList(GameGrid[0][0]).contains("| O "))){
+			if ((Arrays.asList(GameGrid[0][1]).contains("| X ")) || (Arrays.asList(GameGrid[0][1]).contains("| O "))){
+				if ((Arrays.asList(GameGrid[0][2]).contains("| X |")) || (Arrays.asList(GameGrid[0][2]).contains("| O |"))){
+					if ((Arrays.asList(GameGrid[1][0]).contains("| X ")) || (Arrays.asList(GameGrid[1][0]).contains("| O "))){
+						if ((Arrays.asList(GameGrid[1][1]).contains("| X ")) || (Arrays.asList(GameGrid[1][1]).contains("| O "))){
+							if ((Arrays.asList(GameGrid[1][2]).contains("| X |")) || (Arrays.asList(GameGrid[1][2]).contains("| O |"))){
+								if ((Arrays.asList(GameGrid[2][0]).contains("| X ")) || (Arrays.asList(GameGrid[2][0]).contains("| O "))){
+									if ((Arrays.asList(GameGrid[2][1]).contains("| X ")) || (Arrays.asList(GameGrid[2][1]).contains("| O "))){
+										if ((Arrays.asList(GameGrid[2][2]).contains("| X |")) || (Arrays.asList(GameGrid[2][2]).contains("| O |"))){
+											//Display result if tie has occured
+											System.out.println("Tie Detected! There is no winner.");
+											TicTacReplay();
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	//TIC-TAC-TOE CODE END.
